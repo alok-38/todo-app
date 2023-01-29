@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body {
+    background: #edf0f1;
+    padding: 6em 0 0 0;
+}
+
+@media (max-width:75ch) {
+    .hero--home h1 {
+        max-width: 10ch
+    }
+}
+
+body,
+input,
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.noFill {
+    fill: none;
+}
+
+header {
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    padding: 1em;
+    top: 0;
+    left: 0;
+    background: #25b99a;
+    box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+header input {
+    width: 100%;
+    height: 75%;
+    float: left;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    text-indent: 1.2em;
+    padding: 0 1.5em 0 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: .1em 5em 5em .1em;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+header input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+header input:-moz-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+header input::-moz-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+header input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+header button {
+    width: 5ch;
+    height: 3.5em;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    min-width: 10ch;
+    padding: .55em .75em .5em;
+    transition: none .18s ease-in-out;
+    transition-property: background-color, color, border-color;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+header button svg {
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin: -8px 0 0 -8px;
+}
